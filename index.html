@@ -5,71 +5,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <div class="navbar">
-        <img src="https://cdn.who.int/media/images/default-source/infographics/who-emblem.png?sfvrsn=877bb56a_2 " height="50">
-        <p>corona virus</p>
-        <p>population</p>
-</div>
-
-<p><b> NOTE:</b>  As of April 13, 2024, the Coronavirus Tracker is no longer being updated due to the unfeasibility of providing statistically valid global totals, as the majority of countries have now stopped reporting. However, historical data remain accessible. Worldometer delivered the most accurate and timely global statistics to users and institutions around the world at a time when this was extremely challenging. We thank everyone who participated in this extraordinary collaborative effort.</p>
+    <div id="page-top"></div>
+    <div class="nav-bar">
 
 
-<hr>
+        <div class="nav-logo ">
+            <div class="log"></div>
+        </div>
+        <div class="nav">
+            <div class="covid border">
+                <p><span>Covid-19</span></p>
+            </div>
+            <div class="population border">
+                <a href="population.html">World Population</a>
+                 
+                
+            </div>
+            <div class="vacine border">
+                <a href="covidvac.html">Vaccination</a>
+            </div>
+            <div class="login border">
+                <a href="login.html">
+                    <p>login<i class="fa-solid fa-lock"></i></p>
+                </a>
+    
+            </div>
+        </div>
+        
+    </div>
+<div class="bodypart">
+    <div> <!-- place left for add and graphs incubation death rate age symptoms-->  </div><br>
 
-<div> <!-- place left for add and graphs incubation death rate age symptoms-->  </div>
+
+    <p id="note"><b id="note"> NOTE:</b>  As of April 13, 2024, the Coronavirus Tracker is no longer being updated due to the unfeasibility of providing statistically valid global totals, as the majority of countries have now stopped reporting. However, historical data remain accessible. Worldometer delivered the most accurate and timely global statistics to users and institutions around the world at a time when
+         this was extremely challenging. We thank everyone who participated in this extraordinary collaborative effort.</p>
+
+
 <h3>Coronsvirus Worldwide Graphs</h3>
 <p>Data for the charts below is added , and charts updated,after the close of the day .For the <b>country-specific graphs</b>,click on thr country name <u>on the main table</u></p>
 
-<div>
+<div id="text" >
      
-    <li> <u>case progression by country</u><br></li>
-    <li> <u>cases:Europe vs.USA</u><br></li>
-    <li><u>Death progression by country</u><br></li>
-    <li> <u>Total cases</u><br></li>
-    <li> <u>total Deaths</u><br></li>
-    <li> <u>Serious and critical cases</u><br></li>
-    <b>Graphs for each country:</b>click on the country name <u> on the main table</u>
+    <li  > <a href="#curve_chart1" > Cases in major countries</a>  <br></li>
+    <li><a href="#curve_chart2">comparing Europe vs USA </a>  <br></li>
+    <li > <a href="#covid">Deaths in major countries</a> <br></li>
+    <li> <a href="#graph4"> Death Comparison in India vs USA vs Europe</a><br></li>
+    <li><a href="#donutchart">Case distribution-donut chart</a><br></li>
+    <li> <a href="#graph5">Total cases</a>  <br></li>
+    <li><a href="#bar_graph1">Daily cases</a><br></li>
+    <li><a href="#curve_chart3">Active cases</a><br></li>
+    <li><a href="#curve_chart4">Recovered and discharged </a><br></li>
+    <li><a href="#curve_chart5"> new cases vs recoveries</a><br></li>
+    <li><a href="#curve_chart6"> serious and critical cases</a><br></li>
+    <li><a href="#curve_chart7"> outcoome of cases</a><br></li>
+    <li><a href="#curve_chart8">Total deaths </a><br></li>
+    <li><a href="#curve_chart8">Daily deaths </a><br></li>
+    <b>Graphs for each country:</b>click on the country name <a href="#donutchart">on the main table</a> 
 
      
 </div>
 
 
-<div><h3> Cumulative number of cases (by number of days since 10,000 case)</h3></div>
+<div id="number" ><h3 > Cumulative number of cases (by number of days since 10,000 case)</h3></div>
 
 <div>
 <!-- place left empty for graph -->
 </div>
 
-<div id="graph4" style="width: 900px; height: 500px"> </div>
-    <script src="graph1.js"></script> 
+ 
 
+<div class="linechart1">
+<div id="curve_chart1" style="width: 900px; height: 500px"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+<p > <h3 id="number"> cumulative number of cases Europe vs USA  (by number of days since 10,000 cases)</h3>
+</p>
 
-  
-
-
-
-    <div id="covid" style="width: 900px; height: 500px"> </div>
-    <script src="graph2.js"></script> 
-
-
-
-
-    <div id="graph5" style="width: 900px; height: 500px"> </div>
-    <script src="graph3.js"></script> 
-
-
-
-
+<div class="linechart2">
+<div id="curve_chart2" style="width: 900px; height: 500px"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+<div id="number" ><h3 > Cumulative number of deaths(by number of days since 100 deaths)</h3></div>
 
 <div>
+
+
+
+
+<div id="covid" style="width: 900px; height: 500px"> </div>
+<script src="graph2.js"></script> 
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+<p > <h3 id="number"> cumulative number of deaths India Europe vs USA  (by number of days since 100 deaths)</h3>
+</p>
+
+
+<div id="graph4" style="width: 900px; height: 500px"> </div>
+<script src="graph1.js"></script> 
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+<div> <h3> Countries cases distribution :</h3> </div>
+
+   
+<div class="donutgraph">
+<div id="donutchart" style="width: 900px; height: 500px;"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+
+<div><h3>Total cases (worldwide)</h3></div> 
+<p>"Total cases"=total cumulative count(704,753,890).This figure includes deaths and recovered or discharged patients (cases with an outcome)</p>  
+
+
+<div id="graph5" style="width: 900px; height: 500px"> </div>
+<script src="graph3.js"></script> 
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+    
+<div><h3>Daily Cases(worldwide)</h3></div>   
+<p>On April 3, the French Government reported 17,827 additional cases and 532 additional deaths from nursing homes that had not been reported previously. On April 2, it had reported 884 additional deaths.
+
+    On February 12, China reported 51,152 additional new cases due to a change in how cases were diagnosed and reported.</p> 
+       
+      
+<div class="bargraph1">
+<div id="bar_graph1" style="width: 900px; height: 500px;"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+<div><h3>Active Cases:</h3><br>
+    By removing deaths and recoveries from total cases, we get "currently infected cases" or "active cases" (cases still awaiting for an outcome).
+    
+    </div>
+
+<div class="linechart3">
+<div id="curve_chart3" style="width: 900px; height: 500px"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+<p><h3>Recovered and discharged</h3></p>
+
+<div class="linechart4">
+<div id="curve_chart4" style="width: 900px; height: 500px;"></div>
+</div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+<p><h3>Newly infected vs Newly Recovered</h3></p>
+<div class="linechart5">
+    <div id="curve_chart5" style="width: 900px; height: 500px;"></div>
+    </div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+<p><h3>Serious and critical cases</h3></p>
+<div class="linechart6">
+    <div id="curve_chart6" style="width: 900px; height: 500px;"></div>
+    </div>
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+<p><h3>Outcomes of Cases (Recovery of death)</h3></p>
+<div class="linechart7">
+    <div id="curve_chart7" style="width: 900px; height: 500px;"></div>
+    </div>
+
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+<p><h3>Total deaths</h3></p>
+
+<div class="linechart8">
+    <div id="curve_chart8" style="width: 900px; height: 500px;"></div>
+    </div>
+
+<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
+
+
+<!-- <div class="linechart8">
+    <div id="curve_chart8" style="width: 900px; height: 500px;"></div>
+    </div>
+
+<div class="Back"><a href="#page-top">[Backtotop]</a></div> -->
+
+
+
+
+<p><h3>Daily deaths</h3></p>      
+      <script src="graph1s.js"></script>
+      <script src="graph2s.js"></script>
+      <script src="graph3s.js"></script>
+      <script src="graph4s.js"></script>
+      <script src="graph5s.js"></script>
+      <script src="graph6s.js"></script>
+      <script src="pychart.js"></script>
+      <script src="graph1a.js"></script>
+      <script src="graph2a.js"></script>
+      <script src="graph3a.js"></script>
+      <script src="graph4a.js"></script>
+
+<div id="logo"> 
+<img src="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew=", height="100">
+</div>
+
+<p id="covidometer">Covidometer</p>
+<div id="contact">
     <a href="about.html">about</a>|
     <a href="faq.html">FAQ</a>|
     <a href="lang.html">lang</a>|
     <a href="contact.html"> contact</a>|
 </div>
 
+<div class="twiter">
+    <a   href="https://r.search.yahoo.com/_ylt=Awr1UdXiu4pmRGAsEyu7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1720396898/RO=10/RU=https%3a%2f%2fwww.facebook.com%2flogin.php%2f/RK=2/RS=1BIEJkavBKXQAQt7mN38We60gSk- "><img id="facebook" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s" height="40"> </a>
+
+    <a   href="https://twitter.com/login?lang=en"><img id="google" src="https://cdn.mos.cms.futurecdn.net/z3bn6deaxmrjmQHNEkpcZE-1200-80.jpg" height="40"> </a>
+
+    <a  href=" https://r.search.yahoo.com/_ylt=AwrKGFK6u4pm9cwrp4u7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1720396859/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2flogin/RK=2/RS=LWaFpAcJm_y5QznrkmfKC.dvAA0-"><img  id="link"  src="https://tse4.mm.bing.net/th?id=OIP.aGsC0wuuVdQM3TNX4wIamgAAAA&pid=Api&P=0&h=180" height="40"> </a>
+</div>
+ 
+</div>
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+
+*{
+    background-color: rgba(178, 135, 70,0.8);
+}
+p{
+    color: rgb(246, 247, 248);
+}
+h2{
+    color: rgb(18, 25, 32);
+}
+li{
+    color: rgb(246, 247, 248);
+}
+b{
+    color:rgb(16, 84, 5);
+}
+h1{
+    text-align: center;
+    background-color: aliceblue;
+}

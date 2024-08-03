@@ -38,7 +38,8 @@ google.charts.load('current', {'packages':['corechart']});
         ]);
 
         var options = {
-          title: 'Cumulative number of deaths Europe vs USA,by number of days since 100 deaths',
+          title: 'Total cases',
+          
           curveType: 'function',
           legend: { position: 'right' }
         };

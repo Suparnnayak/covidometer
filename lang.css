@@ -1,0 +1,24 @@
+*{
+    background-color: rgb(178, 135, 70);
+    color: white;
+}
+h1{
+    color: black;
+    position: relative;left: 18cm;
+    font-style: italic;
+}
+h3{
+    color: black;
+    font-style: oblique;
+}
+h5{
+    color: black;
+    font-style: italic;
+}
+li{
+    color: black;
+    font-style: italic;
+}
+b{
+    color: rgb(19, 105, 219);
+}

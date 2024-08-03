@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(163, 151, 75);
+    color: rgb(16, 53, 16);
+}
+h1{
+    color: black;
+    font-style:unset;
+    text-align: center;
+    text-decoration:underline;
+}
+h2{
+    color: black;
+    font-style: oblique;
+}
+
+h3{
+    color: black;
+    font-style: italic;
+}

@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+}
+.bodypart{
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzR4Frhsk8jPWgx0KjyKfvrz-l-XI_G5Tg0A&s");background-repeat: no-repeat; */
+background-color: rgb(231, 198, 178);
+}
+.nav-bar{
+    margin: 0.1px;
+    border: border-box;
+    
+}
+.nav-bar{
+    height: 80px;
+    background-color: rgb(132, 210, 86);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    
+    
+    font-size: 30px;
+    
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 38px;
+    
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    margin-right: 100px;
+    position: relative;bottom: .3cm;left: 1cm;
+    
+}
+.log{
+    background-image: url("https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew=");
+    height: 75px;
+    width: 75%;
+    background-size: cover;
+    padding-left: 10px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: left;
+    
+    border-radius: 50%;
+    
+    
+}
+
+
+
+.covid{
+    margin-left: 15px;
+    border: 0cm;
+    
+}
+.population{
+    margin-left: 15px;
+}
+.vaccine{
+    margin-left: 15px;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border:2px solid white ;
+}
+#note{
+    background-color: rgb(255, 70, 3);
+    color: rgb(235, 235, 235);
+}
+ 
+#text{
+     
+     
+  
+    color: rgb(0, 0, 0);
+}
+ 
+
+#number{
+    position: relative;left: 4cm;
+ }
+
+
+ #contact{
+    position: relative;left: 18cm;
+    color: green;
+ }
+ a{
+    color:darkgreen;
+    font-size: larger;
+ }
+#logo{
+    position: relative;left: 19cm;
+}
+#covidometer{
+    position: relative;left: 19.3cm;
+}
+#facebook{
+     
+    border-radius: 75%;
+    position: relative; left: 16cm;
+
+}
+
+#google{
+    border-top: 20px;
+    border-radius: 75%;
+    position: relative; left: 18cm;
+}
+
+#link{
+    border-radius: 90%;
+    border-bottom-left-radius: 90%;
+    border-top-right-radius: 90%;
+    position: relative; left: 20cm;
+    cursor: not-allowed;
+}
+
+h3{
+    color: darkorchid;
+}
+
+.Back{
+    position: relative;left:10cm ;
+}
+
+ .twiter {
+     color: rgb(0, 0, 0);
+ }
+ 
