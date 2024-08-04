@@ -24,3 +24,19 @@ h1{
 #cert{
     color: rgb(21,38,93);
 }
+img{
+    width:300;
+}
+
+@media only screen and (min-width:768px){
+    img{
+        width:750;
+    }
+    
+}
+@media only screen and (min-width:1024px){
+    img{
+        width:900px;
+    }
+    
+}

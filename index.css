@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+     
 }
 .bodypart{
     /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzR4Frhsk8jPWgx0KjyKfvrz-l-XI_G5Tg0A&s");background-repeat: no-repeat; */
@@ -128,7 +129,7 @@ h3{
 }
 
 .Back{
-    position: relative;left:10cm ;
+    text-align: center;
 }
 
  .twiter {
@@ -143,10 +144,17 @@ h3{
   @media only screen and (min-width:768px){
      .container {
          width: 700px;
+
+     }
+     .Back{
+        position: relative;left:10cm ;
      }
  }
  @media only screen and (min-width:1000px){
      .container {
          width: 900px;
+     }
+     .Back{
+        position: relative;left:10cm ;
      }
  }
