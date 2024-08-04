@@ -4,7 +4,8 @@
 }
 h1{
     color: black;
-    position: relative;left: 14cm;
+    display: flex;
+    justify-content: center;
 }
 h3{
     color: black;

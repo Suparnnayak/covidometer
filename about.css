@@ -4,7 +4,8 @@
 }
 h1{
     color: black;
-    position: relative;left: 18cm;
+    display: flex;
+    justify-content: center;;
     font-style: italic;
 }
 h3{
