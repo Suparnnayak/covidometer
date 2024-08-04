@@ -1,7 +1,6 @@
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart3);
+      function drawChart3() {
         var data = google.visualization.arrayToDataTable([
           ['patient count', 'USA', 'Russia','India','Brazil','UK',],
           ['0',  0 , 0,0,0,0],
@@ -24,3 +23,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         chart.draw(data, options);
       }
+      $(window).resize(function(){
+        drawChart3();
+       
+      });

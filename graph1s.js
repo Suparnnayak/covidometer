@@ -1,8 +1,8 @@
 
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart1);
 
-      function drawChart() {
+function drawChart1() {
         var data = google.visualization.arrayToDataTable([
           ['Day','Brazil','India','Russia', 'United Kingdom', 'United States'],
           ['0',   0,       0,        0,        0,          0],
@@ -24,5 +24,8 @@ google.charts.load('current', {'packages':['corechart']});
 
         chart.draw(data, options);
       }
-
+      $(window).resize(function(){
+        drawChart1();
+         
+      });
       

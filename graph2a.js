@@ -1,7 +1,6 @@
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart11);
+function drawChart11() {
     var data = google.visualization.arrayToDataTable([
         ['Date', 'Recovery Rate', 'Death Rate'],
         ['Feb 02 2020', .5676,.4324],
@@ -58,3 +57,7 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+$(window).resize(function(){
+  drawChart11();
+ 
+});

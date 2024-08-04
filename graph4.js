@@ -1,7 +1,7 @@
-google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawStuff1);
 
-      function drawStuff() {
+      function drawStuff1() {
         var data = new google.visualization.arrayToDataTable([
           ['Date',        'Covid daily cases'],
           ['dec 30 2019', 3],
@@ -53,6 +53,10 @@ google.charts.load('current', {'packages':['bar']});
           bar: { groupWidth: "90%" }
         };
 
-        var chart = new google.charts.Bar(document.getElementById('bar_graph2'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('bar_graph2'));
         chart.draw(data, options);
       };
+      $(window).resize(function(){
+        drawStuff1();
+         
+      });

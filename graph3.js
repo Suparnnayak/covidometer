@@ -1,7 +1,7 @@
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart6);
 
-      function drawChart() {
+      function drawChart6() {
         var data = google.visualization.arrayToDataTable([
           ['total covid cases','cases'],
           // ['dec 30 2019',0],
@@ -48,3 +48,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         chart.draw(data, options);
       }
+      $(window).resize(function(){
+        drawChart6();
+         
+      });

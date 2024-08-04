@@ -1,7 +1,6 @@
-
-google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart5);
+      function drawChart5() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['United States: 14.30 %',  111820082],
@@ -25,3 +24,7 @@ google.charts.load("current", {packages:["corechart"]});
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
       }
+      $(window).resize(function(){
+        drawChart5();
+        
+      });

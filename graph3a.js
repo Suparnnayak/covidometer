@@ -1,7 +1,7 @@
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart12);
 
-function drawChart() {
+function drawChart12() {
     var data = google.visualization.arrayToDataTable([
         ['Date', 'Serious and Critical Cases'],
         ['Jan 22 2020', 17],
@@ -47,3 +47,7 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+$(window).resize(function(){
+  
+  drawChart12();
+});

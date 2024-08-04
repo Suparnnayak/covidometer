@@ -1,8 +1,6 @@
-
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart10);
+function drawChart10() {
     var data = google.visualization.arrayToDataTable([
         ['Date', 'New Cases','New Recoveries'],
         ['Jan 22 2020', 271, 34],
@@ -57,3 +55,7 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+$(window).resize(function(){
+  drawChart10();
+  
+});

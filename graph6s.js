@@ -1,7 +1,7 @@
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart9);
 
-      function drawChart() {
+      function drawChart9() {
         var data = google.visualization.arrayToDataTable([
           ['date', 'total recovered'],
           ['dec 30 2019', 0],
@@ -47,3 +47,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         chart.draw(data, options);
       }
+      $(window).resize(function(){
+        drawChart9();
+        
+      });

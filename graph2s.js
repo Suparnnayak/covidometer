@@ -1,8 +1,8 @@
 
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart2);
 
-      function drawChart() {
+      function drawChart2() {
         var data = google.visualization.arrayToDataTable([
           ['Day', 'Europe', 'United States'],
           ['0',    0,             0],
@@ -24,3 +24,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         chart.draw(data, options);
       }
+      $(window).resize(function(){
+         
+        drawChart2();
+      });

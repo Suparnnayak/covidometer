@@ -7,7 +7,12 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
     <div id="page-top"></div>
@@ -15,7 +20,9 @@
 
 
         <div class="nav-logo ">
-            <div class="log"></div>
+            <div class="log">
+                <img src="logo.jpg" alt="">
+            </div>
         </div>
         <div class="nav">
             <div class="covid border">
@@ -79,45 +86,66 @@
 
  
 <div class="container">
-    <div class="linechart1">
-        <div id="curve_chart1" style=" height: 500px"></div>
-        </div>
+    
+        <div id="curve_chart1" class="chart"  style=" height: 500px"></div>
+        
 </div>
 
 
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
 <p > <h3 id="number"> cumulative number of cases Europe vs USA  (by number of days since 10,000 cases)</h3>
-</p>
+</p>    
 
-<div class="linechart2">
-<div id="curve_chart2" style="width: 900px; height: 500px"></div>
+
+<div class="container">
+    <div class="linechart2">
+        <div id="curve_chart2" class="chart" style=" height: 500px"></div>
+    </div>
 </div>
+
+
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+
 <div id="number" ><h3 > Cumulative number of deaths(by number of days since 100 deaths)</h3></div>
 
 <div>
 
 
 
+<div class="container"><div id="covid" class="chart"  style=" height: 500px"> 
 
-<div id="covid" style="width: 900px; height: 500px"> </div>
-<script src="graph2.js"></script> 
+    </div>
+</div>
+
+
+
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 <p > <h3 id="number"> cumulative number of deaths India Europe vs USA  (by number of days since 100 deaths)</h3>
 </p>
 
 
-<div id="graph4" style="width: 900px; height: 500px"> </div>
-<script src="graph1.js"></script> 
-<div class="Back"><a href="#page-top">[Backtotop]</a></div>
+
+<div class="container"><div id="graph4" class="chart" style=" height: 500px"> 
+    </div>
+</div>
+
+
+<div class="Back"><a href="#page-top">[Backtotop]</a>
+</div>
 
 
 <div> <h3> Countries cases distribution :</h3> </div>
 
-   
-<div class="donutgraph">
-<div id="donutchart" style="width: 900px; height: 500px;"></div>
+
+<div class="container">
+    <div id="donutchart" class="chart" style=" height: 500px;"></div>
 </div>
+<!-- <div class="donutgraph"> -->
+
+<!-- </div> -->
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 
@@ -126,8 +154,9 @@
 <p>"Total cases"=total cumulative count(704,753,890).This figure includes deaths and recovered or discharged patients (cases with an outcome)</p>  
 
 
-<div id="graph5" style="width: 900px; height: 500px"> </div>
-<script src="graph3.js"></script> 
+<div class="container"><div id="graph5"class="chart"  style="  height: 500px"> </div></div>
+
+
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
     
 <div><h3>Daily Cases(worldwide)</h3></div>   
@@ -135,10 +164,13 @@
 
     On February 12, China reported 51,152 additional new cases due to a change in how cases were diagnosed and reported.</p> 
        
-      
-<div class="bargraph1">
-<div id="bar_graph1" style="width: 900px; height: 500px;"></div>
-</div>
+<div class="container">
+    <div id="bar_graph1" class="chart"  style="  height: 500px ">
+    </div>
+</div>   
+<!-- <div class="bargraph1"> -->
+
+<!-- </div> -->
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 <div><h3>Active Cases:</h3><br>
@@ -146,45 +178,46 @@
     
     </div>
 
-<div class="linechart3">
-<div id="curve_chart3" style="width: 900px; height: 500px"></div>
-</div>
+<!-- <div class="linechart3"> -->
+<!-- </div> -->
+
+<div class="container"><div id="curve_chart3" class="chart" style="  height: 500px"></div></div>
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 
 <p><h3>Recovered and discharged</h3></p>
 
-<div class="linechart4">
-<div id="curve_chart4" style="width: 900px; height: 500px;"></div>
+<div class="container">
+<div id="curve_chart4" class="chart" style="  height: 500px;"></div>
 </div>
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 
 <p><h3>Newly infected vs Newly Recovered</h3></p>
-<div class="linechart5">
-    <div id="curve_chart5" style="width: 900px; height: 500px;"></div>
+<div class="container">
+    <div id="curve_chart5"class="chart"  style="  height: 500px;"></div>
     </div>
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 
 <p><h3>Serious and critical cases</h3></p>
-<div class="linechart6">
-    <div id="curve_chart6" style="width: 900px; height: 500px;"></div>
+<div class="container">
+    <div id="curve_chart6"class="chart"  style="  height: 500px;"></div>
     </div>
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 
 <p><h3>Outcomes of Cases (Recovery of death)</h3></p>
-<div class="linechart7">
-    <div id="curve_chart7" style="width: 900px; height: 500px;"></div>
+<div class="container">
+    <div id="curve_chart7"class="chart"  style="  height: 500px;"></div>
     </div>
 
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
 <p><h3>Total deaths</h3></p>
 
-<div class="linechart8">
-    <div id="curve_chart8" style="width: 900px; height: 500px;"></div>
+<div class="container">
+    <div id="curve_chart8" class="chart" style="  height: 500px;"></div>
     </div>
 
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
@@ -193,9 +226,9 @@
 
 <p><h3>Daily deaths</h3></p> 
 
-<div class="linechart9">
-    <div id="bar_graph2" style="width: 900px; height: 500px;"></div>
-    </div>
+<div class="container">
+    <div id="bar_graph2" class="chart" style=" height: 500px;"></div>
+</div>
 
 <div class="Back"><a href="#page-top">[Backtotop]</a></div>
 
@@ -214,10 +247,13 @@
       <script src="graph3a.js"></script>
       <script src="graph4a.js"></script>
       <script src="graph4.js"></script>
+      <script src="graph2.js"></script> 
+      <script src="graph3.js"></script> 
+      <script src="graph1.js"></script> 
 
 
 <div id="logo"> 
-<img src="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew=", height="100">
+<!-- <img src="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew=", height="100"> -->
 </div>
 
 <p id="covidometer">Covidometer</p>
@@ -235,9 +271,9 @@
 
     <a  href=" https://r.search.yahoo.com/_ylt=AwrKGFK6u4pm9cwrp4u7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1720396859/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2flogin/RK=2/RS=LWaFpAcJm_y5QznrkmfKC.dvAA0-"><img src="https://tse4.mm.bing.net/th?id=OIP.aGsC0wuuVdQM3TNX4wIamgAAAA&pid=Api&P=0&h=180" height="40"> </a>
 </div>
-<div id="NOVA"><h2>about Team NOVA:</h2>
+<div id="NOVA"><h2>About Team NOVA:</h2>
  
-<a href="us.html">TEAM NOVA</a>
+    <a href="us.html" id="tag">TEAM NOVA</a>
 </div>
  
 </div>
