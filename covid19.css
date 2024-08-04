@@ -1,0 +1,13 @@
+*{
+    font-size: larger;
+    background-color: rgb(235, 176, 155);
+}
+h2{
+    color: darkgreen;
+}
+h3{
+    color:red;
+}
+li{
+    color: darkblue;
+}

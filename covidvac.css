@@ -1,20 +1,26 @@
 
 *{
-    background-color: rgba(178, 135, 70,0.8);
+    background-color: rgba(200, 165, 112, 0.8);
 }
 p{
-    color: rgb(246, 247, 248);
+    color: rgb(171, 31, 31);
 }
 h2{
-    color: rgb(18, 25, 32);
+    color: rgb(21,38,93);
 }
 li{
-    color: rgb(246, 247, 248);
+    color: rgb(180, 31, 31);
 }
 b{
-    color:rgb(16, 84, 5);
+    color:rgb(21, 38, 93);
 }
 h1{
     text-align: center;
     background-color: aliceblue;
+}
+#certificate{
+    font-size :larger;
+}
+#cert{
+    color: rgb(21,38,93);
 }
