@@ -38,7 +38,7 @@ background-color: rgb(231, 198, 178);
     
 }
 .log{
-    /* background-image: url("https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew="); */
+     
     height: 75px;
     width: 75%;
     background-size: cover;
@@ -87,6 +87,7 @@ background-color: rgb(231, 198, 178);
 #number{
     display: flex;
     justify-content: center;
+    color: rgb(105, 24, 125);
  }
 
 
@@ -104,6 +105,8 @@ background-color: rgb(231, 198, 178);
 #covidometer{
     display: flex;
     justify-content: center;
+    color:darkgreen;
+    font-style: italic;
 }
 #facebook{
      
@@ -127,7 +130,7 @@ background-color: rgb(231, 198, 178);
 }
 
 h3{
-    color: darkorchid;
+    color: rgb(66, 17, 91);
     display: flex;
     justify-content: center;
 }
@@ -180,7 +183,7 @@ img{
 }
 
 
-@media  only screen and (min-width:480px){
+@media only  screen and (min-width:480px){
     img{
     
         height: 75px;
@@ -200,7 +203,7 @@ img{
     }
     
 }
-@media  only screen and (min-width:900px){
+@media only   screen and (min-width:900px){
     img{
     
         height: 75px;
